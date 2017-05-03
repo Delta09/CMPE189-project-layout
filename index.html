@@ -34,10 +34,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class=""><a href="#">About <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Contact</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">All Products <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#fff">All Products <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Laptops</a></li>
             <li><a href="#">Tablets</a></li>
@@ -56,7 +54,7 @@
         <button type="submit" class="btn btn-default glyphicon glyphicon-search" style="background-color: #f7c500"></button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="">Cart</a></li>
+        <li><a href="" class="glyphicon glyphicon-shopping-cart" style="color: #fff"></a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -182,9 +180,11 @@
 		</div>
 	</div><!-- main-content -->
 
-	<div id="footer">
+	<div id="footer" class="row">
+		<div class="col-md-4">
+
 		<ul class="footer_box customer_service">
-			<li><b>Customer Service</b></li>
+			<b>Customer Service</b>
 			<li>Customer Help Center</li>
 			<li>Track On Order</li>
 			<li>Return On Item</li>
@@ -192,18 +192,24 @@
 			<li>Privacy & Security</li>
 			<li>Feedback</li>
 		</ul>
+	</div>
+	<div class="col-md-4">
 		<ul class="footer_box my_account">
-			<li><b>My Account</b></li>
+			<b>My Account</b>
 			<li>Log in</li>
 			<li>Register</li>
 			<li>Dashboard</li>
 			<li>History</li>
 		</ul>
+		</div>
+		<div class="col-md-4">
 		<ul class="footer_box company_info">
-			<li><b>Company Information</b></li>
+			<b>Company Information</b>
 			<li>About ERS</li>
 			<li>Hours and Location</li>
 		</ul>
+		</div>
+		</div>
 	</div><!-- footer -->
 
 
@@ -236,6 +242,10 @@
   #productpreview{
     background-color: #fff;
   }
+	#footer{
+		background-color: #102d5b;
+		color: White;
+	}
   .slide1{
     background-image: url(images/spectre.jpg);
     height: 500px;
@@ -260,7 +270,10 @@
 
 .navbar{
 	background-color: #102d5b;
-	color: #ffff;
+}
+
+.nav{
+	color: #102d5b;
 }
 
   </style>
