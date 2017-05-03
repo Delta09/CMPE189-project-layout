@@ -71,7 +71,32 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
   </nav>
-	
+
+	<div id="theCarousel" class="carousel slide" data-ride="carousel">
+
+		<!-- Define how many slides to put in the carousel -->
+		<ol class="carousel-indicators">
+			<li data-target="#theCarousel" data-slide-to="0" class="active"> </li >
+				<li data-target="#theCarousel" data-slide-to="1"> </li>
+				<li data-target ="#theCarousel" data-slide-to="2"> </li>
+			</ol >
+
+			<!-- Define the text to place over the image -->
+			<div class="carousel-inner">
+				<div class="item active" ><div class ="slide1"></div></div>
+				<div class="item"><div class="slide2"></div></div>
+				<div class="item"><div class="slide3"></div></div>
+			</div>
+
+		<!-- Set the actions to take when the arrows are clicked -->
+		<a class="left carousel-control" href="#theCarousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"> </span>
+		</a>
+		<a class="right carousel-control" href="#theCarousel" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+
 	<!-- header -->
 	<div id="header">
 		<div id="container">
@@ -81,7 +106,7 @@
         		<div style="background-image: url(skippr-master/assets/img/test3.jpg)"></div>
         		<div style="background-image: url(skippr-master/assets/img/test4.jpg)"></div>
         		<div style="background-image: url(skippr-master/assets/img/test5.jpg)"></div>
-    		</div>    
+    		</div>
 		</div>
 	</div>
 
@@ -200,5 +225,37 @@
             hidePrevious: false
         });
 	</script>
-	
+
+	<style type="text/css">
+
+  /* Carousel Styling */
+  #theCarousel{
+    background-color: #000;
+  }
+  #productpreview{
+    background-color: #fff;
+  }
+  .slide1{
+    background-image: url(s8.jpg);
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .slide2{
+    background-image: url(alienware.jpg);
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .slide3{
+    background-image: url(7.jpg);
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+  </style>
+
 </body>
